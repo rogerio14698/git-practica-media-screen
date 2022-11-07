@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin-left: 10%;
+        padding: 2px;
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        color: red;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        border: 2px solid black;
+        margin: 1px;
+        max-width: 40%;
+        border-radius: 5px;
+
+    }
+
+    .topnav a:hover {
+        background-color: grey;
+        color: yellow;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    .row {
+        flex: 25%;
+        padding: 20px;
+    }
+    .column {
+        flex: 25%;
+        padding: 20px;
+        width: 25%;
+    }
+    /* 992px */
+    @media screen and (max-width: 992px) {
+        .column {
+            flex: 50%;
+        }
+    }
+    /*600px*/
+    @media screen and (max-width: 600px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+
+    .h2, p {
+        text-align: justify;
+        width: 25%;
+    }
+
+
+</style>
+
+
+<body>
+    <div class="topnav">
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+
+    </div>
+
+    <div>
+    <h2 class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sed obcaecati assumenda culpa? Laudantium est quasi odit? Molestias accusantium temporibus, mollitia laborum tempore nisi aspernatur tempora beatae, eum, nam ullam.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit asperiores eligendi blanditiis dolorem praesentium alias aliquid sapiente illo explicabo magnam, cum dolores nihil harum nisi earum facilis inventore aliquam.</p>
+     </div>
+
+    <div class="row">
+        <div class="column" style="background-color: pink;">
+        <h2> Columna 1</h2>
+        <p>Algo de texto, pero no sé que poner</p>        
+        </div>
+        <div class="column" style="background-color: pink;">
+            <h2> Columna 2</h2>
+            <p>Algo de texto, pero no sé que poner</p>        
+        </div>
+        <div class="column" style="background-color: pink;">
+            <h2> Columna 3</h2>
+            <p>Algo de texto, pero no sé que poner</p>        
+         </div>
+         <div class="column" style="background-color: pink;">
+            <h2> Columna 4</h2>
+            <p>Algo de texto, pero no sé que poner</p>        
+        </div>
+        
+
+    </div>
+    
+
+</body>
+</html>
+
+
+
